@@ -280,8 +280,7 @@ class compression:
                                                                                                                                                                                                                                                                              
                                                                                                                                                                                                                                                                                                                                                         
                                                     W5=W3+"1"
-                                                    W7=format(long_11*8,'029b')
-                                                    W6=format(len(W3)+1,'029b')
+
                                                     W4=W5+W4
                                                     INFO=W4
                                                     #print(len(INFO))
@@ -791,7 +790,7 @@ class compression:
                                                                    b+=1
                                                                    #print(b)
                                                                Z1=Z1[block+1:] 
-                                                               Z1=Z1[:E1] +E3+Z1[E1:]   
+                                                               Z1=Z1[:E1]+E3+Z1[E1:]   
                                                            elif E=="1" or Z7==1:
                                                                     block+=1
                                                                     Z7=1 
