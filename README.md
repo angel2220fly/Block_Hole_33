@@ -1,1 +1,3 @@
-Black Hole 33 Algorithm: from center to the top.
+Black Hole 33 Algorithm: 
+
+From center to the top.
