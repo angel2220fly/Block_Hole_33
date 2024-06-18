@@ -471,8 +471,8 @@ class compression:
     
                                                                     W="0"+str(len(C1))+"b"
                                                                     CL1=format(longl,W)        
-                                                                    CL2=format(En,'01b')
-                                                                    CL3=format(len(CL2),'06b')
+                                                                    CL2=format(En,'015b')
+                                                                 
                                                                     
                                                                  
                                                                    
@@ -489,7 +489,7 @@ class compression:
                                                                            if N3==1:
                                                                               
                                                                                
-                                                                               File_information5_17="1"+CL3+CL2+CL1+Z4
+                                                                               File_information5_17="1"+CL2+CL1+Z4
 
                                                                           
 
@@ -558,15 +558,11 @@ class compression:
                                                             
                                     INFO=Extract
 
-                                    Cut=int(INFO[:6],2)
-                                        #print(longl)
-                                    INFO=INFO[6:]                                 
+                                                       
                                     
                                     En2=0
                                         
-                                    En=int(INFO[:Cut],2)
-                                        #print(longl)
-                                    INFO=INFO[Cut:]
+                             
                                     
                                     if En<=7:
                                         longl=int(INFO[:3],2)
